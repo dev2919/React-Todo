@@ -1,1 +1,299 @@
-/* No CSS *//*# sourceMappingURL=App.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+body {
+  background-color: #D1D1D1;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.App {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #E8E8E8;
+  padding: 4rem;
+  min-height: 69vh;
+  max-width: 20vw;
+  overflow: hidden;
+}
+
+.App .list {
+  margin: 15px;
+}
+
+.App .list-main::-webkit-scrollbar {
+  width: 5px;
+}
+
+.App .list-main::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+.App .list-main::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+.App .list-main {
+  margin-top: 57%;
+  margin-left: -9%;
+  overflow: scroll;
+  overflow-x: hidden;
+  max-height: 38vh;
+  width: 24vw;
+}
+
+.App .list-main .list-item {
+  border-top: 4px solid black;
+  margin-top: -16px;
+  padding: 5% 0% 0% 0;
+  height: 12vh;
+}
+
+.App .list-main .list-item .option {
+  width: 3rem;
+  display: inline-block;
+  padding-right: 18px;
+}
+
+.App .list-main .list-item p {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 0;
+  margin: 0;
+  width: 15vw;
+  word-wrap: break-word;
+}
+
+.App .list-main #op2 {
+  display: none;
+}
+
+.App .list-main #op2 svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.App .add-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  max-width: 28.5vw;
+  padding-bottom: 27%;
+  -webkit-transition: padding-bottom 0.2s ease;
+  transition: padding-bottom 0.2s ease;
+}
+
+.App .add-div h2 {
+  text-align: center;
+  font-size: 3rem;
+  max-width: 13rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.App .add-div .smile {
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  background-color: #F3DA54;
+  margin: auto;
+}
+
+.App .add-div .smile svg {
+  width: 9rem;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.App .add-div #todo-input {
+  background-color: #E8E8E8;
+  border: none;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  height: 2rem;
+  font-size: 23px;
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  padding: 11px 0px;
+  width: 94%;
+  margin: 9px;
+}
+
+.App .add-div #todo-submit {
+  height: 3rem;
+  background-color: black;
+  border: none;
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2rem;
+  margin-top: 1rem;
+  width: 94%;
+  margin: 9px;
+}
+
+#time-smile svg {
+  width: 12rem;
+  height: 7rem;
+  margin: 1rem;
+  position: absolute;
+  top: 72px;
+  left: 54%;
+}
+
+.mystyle {
+  -webkit-animation: over 2s forwards;
+          animation: over 2s forwards;
+  opacity: 1;
+  z-index: 1;
+}
+
+.overlay {
+  max-width: 28.5vw;
+  background-color: #E8E8E8;
+  border-radius: 0;
+  z-index: 0;
+}
+
+.hidden {
+  height: 8rem;
+  margin-bottom: 126px;
+  width: 6rem;
+  padding: 20% !important;
+  border-radius: 50%;
+  -webkit-animation: hidden 1s forwards;
+          animation: hidden 1s forwards;
+  border-radius: 0 0 50%;
+  background-color: #F3DA54;
+  z-index: 0;
+  margin: auto;
+  top: -41px !important;
+  left: -36px !important;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#hide-content {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 3%;
+  display: none;
+}
+
+@-webkit-keyframes over {
+  from {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0 0 50%;
+    background-color: #F3DA54;
+  }
+  to {
+    height: 1001px;
+    width: 1000px;
+    /* border-radius: 0; */
+    background-color: #E8E8E8;
+  }
+}
+
+@keyframes over {
+  from {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0 0 50%;
+    background-color: #F3DA54;
+  }
+  to {
+    height: 1001px;
+    width: 1000px;
+    /* border-radius: 0; */
+    background-color: #E8E8E8;
+  }
+}
+
+@-webkit-keyframes hidden {
+  from {
+    height: 501px;
+    width: 28.5vw;
+    border-radius: 0;
+  }
+  to {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@keyframes hidden {
+  from {
+    height: 501px;
+    width: 28.5vw;
+    border-radius: 0;
+  }
+  to {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+#todo-task {
+  height: 3rem;
+  background-color: black;
+  border: none;
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+  width: 80%;
+  margin: 9px;
+  position: absolute;
+  bottom: 37px;
+  z-index: -4;
+  margin-left: -12px;
+}
+
+#time-smile {
+  margin-left: -30px;
+  margin-top: -31px;
+}
+
+#date {
+  margin: 0;
+  font-size: 71px;
+}
+
+#month {
+  margin-top: -18px;
+  font-style: italic;
+}
+
+td {
+  border-spacing: 0;
+  padding-bottom: 13px !important;
+  vertical-align: bottom;
+  display: inline-block;
+}
+
+.option {
+  border-spacing: 0;
+  padding: 12px !important;
+  vertical-align: top;
+  height: 40px;
+  overflow: hidden;
+}
+
+.option .op2 svg {
+  width: 50px;
+  height: 50px;
+}
+/*# sourceMappingURL=App.css.map */
