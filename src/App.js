@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import List from './List'
+import FlipMove from 'react-flip-move';
 let key=0;
 
 
@@ -53,6 +54,10 @@ class App extends React.Component{
   }
 
 
+  componentDidMount() {
+    console.log = function(){};
+     };
+
   expand = ()=>{
     document.getElementById("over").classList.add("mystyle");    
     document.getElementById("over").classList.remove("hidden");
@@ -95,7 +100,7 @@ class App extends React.Component{
     <div className="App">
       <div className="list-main">
         <table>
-      {content.map((string,index)=> index>0?<List key={string.key} identity={string.key} triggerParentUpdate={i => this.delContent(i)} content={string.des} />:null)}
+      {content.map((string,index)=> index>0?  <FlipMove key={string.key} duration={500} easing="ease-in-out"><List key={string.key} identity={string.key} triggerParentUpdate={i => this.delContent(i)} content={string.des} /></FlipMove>:null)}
       </table>
       </div>
       <div className="add-div overlay hidden" id='over'>

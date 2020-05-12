@@ -4,6 +4,10 @@ import './App.css';
 class List extends React.Component{
 
 
+  componentDidMount() {
+    console.log = function(){};
+     };
+
 
   toggle_tick = (e) =>{
     console.log(e.target,e.target.getAttribute('identity'));
@@ -19,11 +23,12 @@ class List extends React.Component{
   }
 
   toggle_text = (e) =>{
-     e.target.style.textDecoration == "line-through"? e.target.style.textDecoration = "none":e.target.style.textDecoration = "line-through";
+     e.target.style.textDecoration === "line-through"? e.target.style.textDecoration = "none":e.target.style.textDecoration = "line-through";
   }
 
   render(){
   return (
+      <>
       <tr >
     <div className="list">
     <div className="list-item">
@@ -43,9 +48,11 @@ class List extends React.Component{
     {this.props.content}
     </p>
     </td>
+
     </div>
     </div>
     </tr>
+    </>
   );
 }
 }

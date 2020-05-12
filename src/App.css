@@ -19,7 +19,9 @@ body {
 }
 
 .App .list {
+  padding: 0.4rem;
   margin: 15px;
+  height: 8vh;
 }
 
 .App .list-main::-webkit-scrollbar {

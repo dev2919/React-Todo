@@ -18,7 +18,9 @@ body {
   overflow: hidden;
 
   .list {
+    padding: 0.4rem;
     margin: 15px;
+    height: 8vh;
   }
 
   .list-main::-webkit-scrollbar {
