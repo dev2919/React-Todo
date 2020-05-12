@@ -4,6 +4,8 @@
 
 ![React Todo app Demo](./src/reacttodo.gif)
 
+# UI Concept
+![React Todo app concept](https://cdn.dribbble.com/users/4698643/screenshots/9708712/media/10ebf8fb5d2a39c20dadaa5c7625d6f4.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
