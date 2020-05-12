@@ -1,5 +1,5 @@
 
-![React Todo app Demo](./src/reactodo.gif)
+![React Todo app Demo](./src/reacttodo.gif)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
